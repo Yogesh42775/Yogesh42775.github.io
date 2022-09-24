@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		#div1{
+			text-align:center;
+			background:rgb(248, 22, 22);
+			height:170px;
+			width:1530px;
+			border:3px solid rgb(0, 0, 0);
+			padding:10px;
+			margin:15px;		
+		}
+		#div2{
+			text-align:center;
+			background:rgb(255, 128, 0);
+			height:500px;
+			width:1530px;
+			border:3px solid rgb(0, 0, 0);
+			padding:10px;
+			margin:15px;		
+		}
+		#div3{
+			text-align:center;
+			background:rgb(255, 187, 0);
+			height:50px;
+			width:1530px;
+			border:3px solid rgb(5, 5, 5);
+			padding:10px;
+			margin:15px;		
+		}
+	</style>
+	<div id="div1">
+		<h1>Yogesh Kumar Agarwal</h1>
+		<h2><br>Reg No - 202000253</h2>
+	</div>
+	<div id="div2">
+		<img onmouseover="largePic(this)" onmouseout="normPic(this)" src="images.jpg" width="320" 					height="180">
+		<h1 id="name" onmouseover="largefont(this)" onmouseout="normfont(this)">Bruce Lee</h1>
+		<script>
+		function largePic(x)
+		{
+			x.style.width="640px";
+			x.style.height="360px";
+		}
+		function normPic(x)
+		{
+			x.style.width="320px";
+			x.style.height="180px";
+		}
+		function largefont(x)
+		{
+			var element=document.getElementById("name");
+			element.style.fontSize = "80px";
+		}			
+		function normfont(x)
+		{
+			var element=document.getElementById("name");
+			element.style.fontSize = "50px";
+		}
+		</script>        
+	</div>
+	<div id="div3">
+		<h2>yogesh_202000253@smit.smu.edu.in</h2>
+	</div>
+</body>
+</html>
